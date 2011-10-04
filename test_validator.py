@@ -180,7 +180,7 @@ class JavaScriptTests(ValidatorTest):
         self.expectMsg(u"'registerFactory' function called in potentially "
                        u"dangerous manner")
 
-    def test_setInterval_called_dangerously(self):
+    def test_setTimeout_called_dangerously(self):
         self.validate('setTimeout.xpi')
         self.assertPartialMsg(u"'setTimeout' function called in potentially "
                               u"dangerous manner")
