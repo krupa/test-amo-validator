@@ -181,8 +181,8 @@ class JavaScriptTests(ValidatorTest):
                        u"dangerous manner")
 
     def test_setInterval_called_dangerously(self):
-        self.validate('setInterval.xpi')
-        self.assertPartialMsg(u"'setInterval' function called in potentially "
+        self.validate('setTimeout.xpi')
+        self.assertPartialMsg(u"'setTimeout' function called in potentially "
                               u"dangerous manner")
 
 
