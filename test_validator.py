@@ -170,7 +170,7 @@ class JavaScriptTests(ValidatorTest):
         self.expectMsg(u"Illegal or deprecated access to the "
                        u"'evalInSandbox' global")
 
-    def test_addObserver_called_dangerouslyt(self):
+    def test_addObserver_called_dangerously(self):
         self.validate('addObserver.xpi')
         self.expectMsg(u"'addObserver' function called in potentially " 
                        u"dangerous manner")
